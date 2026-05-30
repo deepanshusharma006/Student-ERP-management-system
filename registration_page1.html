@@ -1,0 +1,211 @@
+<%-- 
+    Document   : student_registration
+    Created on : 18 Feb, 2025, 2:58:26 PM
+    Author     : dell
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/slider_css.css" rel="stylesheet" type="text/css"/>
+        <link href="css/css1_1.css" rel="stylesheet" type="text/css"/>
+        <link href="css/registration1_css_1.css" rel="stylesheet" type="text/css"/>
+        
+        <title>Student Information System </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+         
+
+    </head>
+    <body>
+        <div class="outer_container">
+        <div class="inner_container">
+        <div class="name">
+            <div class="subname1"> <span class="span1">S</span>TUDENT <span class="span1">I</span>NFORMATION <span class="span1">S</span>YSTEM</div>
+            <div class="subname2"><span class="span2">Manage Students,Fees,Attendance Online</span></div>
+            
+        </div>
+        <div class="top_right_corner">
+            <div> <a href="homepage.jsp">Home</a></div>|<div> <a href="#">About Us</a></div>|<div> <a href="#">Contact</a></div>|<div> <a href="student_login.jsp">Student Login</a></div>|<div> <a href="admin_login.jsp">Administrator Login</a></div>
+        </div>
+        <div class="search_bar"> 
+            <form class="sear" > 
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search" type="text" placeholder="Search Here"> 
+                <button type="submit">Search</button> 
+            </form> 
+        </div>
+            <div class="menu_baar">
+                 <div> <a href="homepage.jsp">HOME</a></div><div> <a href="#">ABOUT US</a></div><div> <a href="registration_page1.jsp">STUDENT REGISTRATION</a></div><div> <a href="student_login.jsp">STUDENT LOGIN</a></div><div> <a href="admin_login.jsp">ADMINISTRATOR LOGIN</a></div><div> <a href="#">CONTACT US</a></div>
+                
+            </div>
+            
+            <div class="registration_middle_container">
+                <div class="registration_part1"> 
+                    <div>
+                    <div class="part_1_inner">Student Registration Form</div><hr size="3" noshade width=95% color="#e8eae9">
+                    </div>
+                     <form action="#" method="post" name="form" class="form">
+                         <div class="row">
+                         <div class="column">
+                   <div class="input-box1">
+                        <label for="Salution" > Salution<span>*</span></label>
+                        <select name="Salution" >
+                            <option value="" selected> Please Select</option>
+                             <option value="Mr."> Mr.</option>
+                            <option value="Miss"> Miss</option>
+                            <option value="Mrs"> Mrs</option>
+                            
+                        </select>
+                    </div>
+                   <div class="input-box1">
+                       <label for="Category" > Category<span>*</span></label><br>
+                       <select name="Category">
+                           <option value="" selected> Please Select</option>
+                           <option value="General"> General</option>
+                            <option value="OBC"> OBC</option>
+                            <option value="SC"> SC</option>
+                             <option value="ST"> ST</option>
+                            
+                        </select>
+                    </div>
+                             <div class="input-box1">
+                       <label for="Employement" > Father Employement Status<span>*</span></label><br>
+                        <select name="fatherstatus">
+                            <option value="" selected > Please Select</option>
+                            <option value="Gov. Job"> Gov. job</option>
+                            <option value="labour"> labour</option>
+                            <option value="own Business"> own Business</option>
+                             
+                            
+                        </select>
+                    </div>
+                         </div>
+                         <div class="column">
+                    <div class="input-box1">
+                        <label for="Name"> First Name<span>*</span></label> 
+                        <input type="text" name="Name" value="" required="required"/>
+                    </div>
+                   <div class="input-box1">
+                       <label> Middle Name</label> 
+                       <input type="text" name="Middlename" value="" required="required"/>
+                    </div>
+                             <div class="input-box1">
+                       <label> Last Name</label> 
+                    <input type="text" name="Lastname" value="" required="required"/>
+                    </div>
+                         </div>
+                             <div class="column">
+                    <div class="input-box1">
+                        
+                    <label for="Employement" > Gender<span>*</span></label><br>
+                        <select name="Gender">
+                            <option value="" selected> Please Select</option>
+                            <option value="Male"> Male</option>
+                            <option value="Female"> Female</option>
+                        </select>
+                    </div>
+                   <div class="input-box1">
+                      <label> Date of birth</label> 
+                        <input type="date" name="DOB" value="" required="required"/>
+                    </div>
+                             <div class="input-box1">
+                       <label>Nationality</label> 
+                    <input type="text" name="Nationality" value="" required="required"/>
+                    </div>
+                         </div>
+                             <div class="column">
+                    <div class="input-box1">
+                        <label> Email<span>*</span></label> 
+                    <input type="text" name="Email" value="" required="required"/>
+                    </div>
+                   <div class="input-box1">
+                       <label> Landline</label> 
+                    <input type="text" name="Landline" value="" required="required"/>
+                    </div>
+                             <div class="input-box1">
+                       <label> Mobile</label> 
+                    <input type="text" name="Mobile" value=""  required="required"/>
+                    </div>
+                         </div>
+                              <div style="margin-top: 20px">
+                    <div class="part_1_inner">Student Address Details</div><hr size="3" noshade width=95% color="#e8eae9">
+                    </div>
+                             <div class="column">
+                    <div class="input-box1">
+                        <label> Address<span>*</span></label> 
+                    <input type="text"  name="Address" value=""  required="required"/>
+                    </div>
+                   <div class="input-box1">
+                       <label> Village/City/Town</label> 
+                    <input type="text" name="City" value="" required="required"/>
+                    </div>
+                             <div class="input-box1">
+                        <label for="State" > State<span>*</span></label><br>
+                        <select name="State">
+                            <option value="" selected> Please Select</option>
+                            <option value="U.P.">U.P.</option>
+                            <option value="Delhi"> Delhi</option>
+                        </select>
+                    </div>
+                         </div>
+                             <div class="column1" style="margin-top: 25px;">
+                    
+                             <div class="input-box1">
+                        <label for="Country" > Country<span>*</span></label><br>
+                        <select name="Coundry">
+                            <option value="" selected> Please Select</option>
+                            <option value="India">India</option>
+                            <option value="ShriLanka"> ShriLanka </option>
+                            <option value="Canada"> Canada </option>
+                            <option value="US"> US </option>
+                        </select>
+                    </div>
+                         </div>
+                             <div style="margin-top: 20px">
+                    <div class="part_1_inner">Student Login Details</div><hr size="3" noshade width=95% color="#e8eae9">
+                    </div>
+                             <div class="column">
+                    <div class="input-box1">
+                        <label>User Name<span>*</span></label> 
+                    <input type="text" name="User_Name" value="" required="required"/>
+                    </div>
+                   <div class="input-box1">
+                       <label> Password</label> 
+                    <input type="password" name="Password" value="" required="required"/>
+                    </div>
+                             <div class="input-box1">
+                       <label>Conform Password</label> 
+                    <input type="password" name="Conform_Password" value=""required="required"/>
+                    </div>
+                         </div>
+                             <div class="button1" style="margin-top: 20px">
+                                 <input class="button" id="submit" value="submit" name="submit" type="submit"  >
+                    <input class="button" id="reset" value="reset" name="reset" type="submit"  >
+                    </div>
+                         </div>
+                     </form>
+                    
+                </div>
+                 <div class="registration_part2"> 
+                    <img class= side_image src="image/studentgroup.webp" />
+                    
+  
+
+                 </div>
+                
+                
+                
+               
+                
+            </div>
+        </div>
+        </div>
+        
+    </body>
+    
+</html>
